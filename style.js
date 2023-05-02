@@ -113,7 +113,7 @@ let changeUrl = function(e) {
                         localStorage.productList = JSON.stringify(homeData[i]);
                     }
                 }
-                location.href = 'file:///C:/Users/NTC/Desktop/study/edyoda-assignment/javascript/final%20project/singleproduct.html'; 
+                location.href = location.protocol + '//' + location.hostname + '/singleproduct.html'; 
             }
     });
 }
@@ -125,7 +125,7 @@ let changeUrl = function(e) {
 //             localStorage.productList = JSON.stringify(homeData[i]);
 //         }
 //     }
-//     location.href = 'file:///C:/Users/NTC/Desktop/study/edyoda-assignment/javascript/final%20project/singleproduct.html';
+//     location.href = location.protocol + '//' + location.hostname + '/singleproduct.html';
 // }
 
 let checkoutUrl = function(e) {
@@ -133,17 +133,17 @@ let checkoutUrl = function(e) {
         .then(resp => resp.json())
         .then(data => {
             if(data) {
-                location.href = 'file:///C:/Users/NTC/Desktop/study/edyoda-assignment/javascript/final%20project/checkout.html'; 
+                location.href = location.protocol + '//' + location.hostname + '/checkout.html'; 
             }
     });
 }
 
 // let checkoutUrl = function(e) {
-//     location.href = 'file:///C:/Users/NTC/Desktop/study/edyoda-assignment/javascript/final%20project/checkout.html';
+//     location.href = location.protocol + '//' + location.hostname + '/checkout.html';
 // }
 
 let orderCnfrm = function() {
-    location.href = 'file:///C:/Users/NTC/Desktop/study/edyoda-assignment/javascript/final%20project/order-confirmation-page.html';
+    location.href = location.protocol + '//' + location.hostname + '/order-confirmation-page.html';
 }
 
 let addcart = function() {
